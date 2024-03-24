@@ -13,7 +13,6 @@
 
 ** cus-start.el, startup.el, etc.
 
-- =setopt= つかう
 - 細々した初期設定
 - フレームタイトルとかモードライン
 
@@ -52,10 +51,16 @@
 
 ** Font
 
-- https://misohena.jp/blog/2017-09-26-symbol-font-settings-for-emacs25.html
-- http://extra-vision.blogspot.com/2016/07/emacs.html
-- https://qiita.com/styzo/items/f8855cb0f5821396e6aa
-- https://zenn.dev/tmtms/articles/202202-emacs-font
+- 使用フォント
+  - https://github.com/yuru7/moralerspace
+  - http://jikasei.me/font/mgenplus/
+  - http://jikasei.me/font/rounded-mgenplus/
+  - Noto Color Emoji
+- Emacsのフォント設定に関して
+  - https://misohena.jp/blog/2017-09-26-symbol-font-settings-for-emacs25.html
+  - http://extra-vision.blogspot.com/2016/07/emacs.html
+  - https://qiita.com/styzo/items/f8855cb0f5821396e6aa
+  - https://zenn.dev/tmtms/articles/202202-emacs-font
   -
 *** 幅確認
 ずれ確認用 半角40字、全角20字
@@ -81,10 +86,12 @@ _underline_
 
 - corfu.el
 - cape.el
+- tempel.el
 - yasnippet.el
 - hippie-exp.el (built-in)
+- autoinsert (built-in)
 
-**  vertico.el, consult.el, etc
+**  vertico.el, consult.el, and orderless etc.
 
 - https://blog.tomoya.dev/posts/a-new-wave-has-arrived-at-emacs/
 - https://www.reddit.com/r/emacs/comments/11tl1kh/comment/jcjngt0/
@@ -92,7 +99,8 @@ _underline_
 - https://tam5917.hatenablog.com/entry/2022/02/11/153756
 - https://github.com/minad/consult/issues/407#issuecomment-930646394
 
-** flycheck.el
+
+** flymake.el and flycheck.el
 
 - https://blog.piyo.tech/posts/2018-10-10-textlint-on-emacs/
 - https://gist.github.com/PharaohKJ/cc849ad12ca613fec9604e5e91012ffc
@@ -103,9 +111,19 @@ _underline_
 
 ** Lsp
 
+- eglot.el (built-in)
+
 ** Emacs lisp
 
+- paredit.el
+- eldoc.el
+- macrostep.el
+
 ** C language
+
+- hideif
+- clang-format
+- cmake-mode
 
 ** Haskell
 
@@ -115,6 +133,9 @@ _underline_
 
 ** BNF
 
+- ebnf-mode.el
+  - コメントなどを改造してつかっている。
+
 ** Latex
 
 - AUCTeX
@@ -123,11 +144,18 @@ _underline_
 ** Howm
 
 - hitori otegaru wiki modoki
-- http://howm.sourceforge.jp/cgi-bin/hiki/hiki.cgi?SaveAndKillBuffer
+  - http://howm.sourceforge.jp/cgi-bin/hiki/hiki.cgi?SaveAndKillBuffer
 
 ** org-mode
 
+- org-agenda.el
+- org-capture.el
+  - hownがメインになっており、あまりつかっていない
+
 ** Markdown
+
+- markdown-mode
+- markdown-preview-mode
 
 ** Shell
 
@@ -138,8 +166,11 @@ _underline_
 
 - perspective.el
   - https://qiita.com/atsisy/items/1b7249bf3cd6046b5681
+  - 上記を整理して [[.emacs.d/elisp/number-perspective.el][number-perspective]] にまとめた。
 - viewer.el
 - which-key
+- [[https://fenril058/yawac-mode][yawc-mode.el]] : 日本語で文字数カウントを表示する。
+- open-junk-file
 - oblique-strategies
   - https://gist.github.com/no-defun-allowed/068bb95c476201f009fcfeb135f21432
   - http://www.rtqe.net/ObliqueStrategies/Ed5.html
@@ -148,4 +179,6 @@ _underline_
 ** 不採用
 
 *** leaf.el
+
 - https://emacs-jp.github.io/tips/emacs-in-2020
+  - 今回はuse-package.elを使ったため。
