@@ -1,0 +1,151 @@
+* Emacs 29
+
+** early-init.el
+
+** package.el
+
+- https://melpa.org/packages/
+- https://stable.melpa.org/packages/
+
+** use-package.el
+
+- https://github.com/slotThe/vc-use-package"
+
+** cus-start.el, startup.el, etc.
+
+- =setopt= つかう
+- 細々した初期設定
+- フレームタイトルとかモードライン
+
+** Misc
+
+- 細々した初期設定2
+- [[.emacs.d/elisp/myutils.el][myutils.el]] はコマンド集（いろんな寄せ集め）
+- [[https://github.com/fenril058/dtw-mode][dtw-mode.el]] は自作の空白削除ユーティリティ
+
+** mozc.el
+
+- https://github.com/google/mozc/blob/master/docs/build_mozc_in_windows.md
+- https://zenn.dev/ignorant/scraps/6132afb5915f34
+- https://w.atwiki.jp/ntemacs/pages/61.html
+- https://qiita.com/ignorant/items/1c4f729f9147fb878f10
+- https://w.atwiki.jp/ntemacs/pages/48.html
+- https://qiita.com/minoruGH/items/75933b06d2f46c21d9b1
+
+
+** dired
+
+- dot filesの表示をトグルできるように
+
+** History
+
+- [[.emacs.d/elisp/auto-save-recentf.el][auto-save-recentf]] は自作のrecetfの自動save
+- http://d.hatena.ne.jp/rubikitch/20110226/savekill
+
+** Paren
+
+- elec-pair (built-in)
+
+
+** Visual
+
+
+** Font
+
+- https://misohena.jp/blog/2017-09-26-symbol-font-settings-for-emacs25.html
+- http://extra-vision.blogspot.com/2016/07/emacs.html
+- https://qiita.com/styzo/items/f8855cb0f5821396e6aa
+- https://zenn.dev/tmtms/articles/202202-emacs-font
+  -
+*** 幅確認
+ずれ確認用 半角40字、全角20字
+
+AIfUEaiueoAIUEOaiueoAIUEOaiueoAIUEOaiueo ASCII英字
+0123456789012345678901234567890123456789 ASCII数字
+ｱｲｳｴｵｱｲｳｴｵｱｲｳｴｵｱｲｳｴｵｱｲｳｴｵｱｲｳｴｵｱｲｳｴｵｱｲｳｴｵ JIS X 0201ｶﾅ
+あいうえおあいうえおあいうえおあいうえお JIS X 0208ひらがな
+アイウエオアイウエオアイウエオアイウエオ 同カタカナ
+※※※※※※※※※※※※※※※※※※※※ 米印
+🀄🀅🀆🀇🀈🀄🀅🀆🀇🀈🀄🀅🀆🀇🀈🀄🀅🀆🀇🀈 絵文字
+🌑🌓🌕🌗🌑🌓🌕🌗🌑🌓🌕🌗🌑🌓🌕🌗🌑🌓🌕🌗 月絵文字
+ＡＢＣＤＥＡＢＣＤＥＡＢＣＤＥＡＢＣＤＥ 同英字
+亜唖娃阿哀亜唖娃阿哀亜唖娃阿哀亜唖娃阿哀 同漢字
+𠀋𡈽𡌛𡑮𡢽𠀋𡈽𡌛𡑮𡢽𠀋𡈽𡌛𡑮𡢽𠀋𡈽𡌛𡑮𡢽 JIS X 0213漢字
+
+*** 書体確認
+/italic/
+_underline_
+*bold*
+
+** 補完
+
+- corfu.el
+- cape.el
+- yasnippet.el
+- hippie-exp.el (built-in)
+
+**  vertico.el, consult.el, etc
+
+- https://blog.tomoya.dev/posts/a-new-wave-has-arrived-at-emacs/
+- https://www.reddit.com/r/emacs/comments/11tl1kh/comment/jcjngt0/
+- https://zenn.dev/megeton/articles/56b8a6a74e6394
+- https://tam5917.hatenablog.com/entry/2022/02/11/153756
+- https://github.com/minad/consult/issues/407#issuecomment-930646394
+
+** flycheck.el
+
+- https://blog.piyo.tech/posts/2018-10-10-textlint-on-emacs/
+- https://gist.github.com/PharaohKJ/cc849ad12ca613fec9604e5e91012ffc
+- https://www.if-blog.site/posts/emacs/text-lint/
+
+
+** Tree-sitter
+
+** Lsp
+
+** Emacs lisp
+
+** C language
+
+** Haskell
+
+** Rust
+
+** Python
+
+** BNF
+
+** Latex
+
+- AUCTeX
+- pdf-tool
+
+** Howm
+
+- hitori otegaru wiki modoki
+- http://howm.sourceforge.jp/cgi-bin/hiki/hiki.cgi?SaveAndKillBuffer
+
+** org-mode
+
+** Markdown
+
+** Shell
+
+- vterm.el
+- shell-pop.el
+
+** Others
+
+- perspective.el
+  - https://qiita.com/atsisy/items/1b7249bf3cd6046b5681
+- viewer.el
+- which-key
+- oblique-strategies
+  - https://gist.github.com/no-defun-allowed/068bb95c476201f009fcfeb135f21432
+  - http://www.rtqe.net/ObliqueStrategies/Ed5.html
+  - https://github.com/wandersoncferreira/oblique-strategies
+
+** 不採用
+
+*** leaf.el
+- https://emacs-jp.github.io/tips/emacs-in-2020

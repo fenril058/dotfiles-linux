@@ -1,0 +1,14 @@
+# for interactive operation
+alias rm='rm -i' cp='cp -i' mv='mv -i'
+alias copy='cp -ip' del='rm -i' move='mv -i'
+
+# alias for some shortcuts for different directory listings
+alias ls=' ls -hF --color=auto'
+alias ll=' ls -la' la=' ls -A' l=' ls -CF'
+alias l.='ls -d .*'
+
+# for misc
+alias grep='grep --color=auto'
+alias e='emacsclient'
+alias pu=pushd po=popd dirs='dirs -v'
+

@@ -1,0 +1,26 @@
+# emacs
+*~
+\#*\#
+*.elc
+emacs/.emacs.d/auto-save-list/
+emacs/.emacs.d/.cache/
+emacs/.emacs.d/custom.el
+emacs/.emacs.d/elpa/
+emacs/.emacs.d/eln-cache/
+emacs/.emacs.d/eshell/
+emacs/.emacs.d/history
+emacs/.emacs.d/kill-ring-saved.el
+emacs/.emacs.d/kkcrc
+emacs/.emacs.d/migemo-pattern
+emacs/.emacs.d/places
+emacs/.emacs.d/recentf
+emacs/.emacs.d/session.*
+emacs/.emacs.d/tramp
+emacs/.emacs.d/tree-sitter/
+emacs/.emacs.d/url/
+
+# zsh
+*.zwc
+zsh/.zsh/.chpwd-recent-dirs
+zsh/.zsh/.zsh_history
+zsh/.zsh/.zcompdump
