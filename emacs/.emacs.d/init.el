@@ -31,7 +31,7 @@
   (package-vc-install "https://github.com/slotThe/vc-use-package"))
 (require 'vc-use-package)
 
-(use-package delight
+(use-package blackout
   :ensure t)
 
 (use-package hydra
@@ -183,20 +183,21 @@
   ("C-c d" . duplicate-thing))
 
 (use-package sequential-command
-  :ensure t
+  :vc
+  (:fetcher github
+            :repo fenril058/sequential-command
+            :rev "master")
   :config
   (use-package sequential-command-config
+    :custom
+    (seq-cmd-home-prefer-back-to-indentation t)
+    (seq-cmd-end-prefer-end-of-code t)
     :config
-    (define-sequential-command seq-home
-                               back-to-indentation
-                               beginning-of-line
-                               beginning-of-buffer
-                               seq-return)
     (sequential-command-setup-keys)))
 
 (use-package anzu
   :ensure t
-  :delight
+  :blackout
   :bind
   ("C-c r" . anzu-query-replace)        ; M-%
   ("C-c R" . anzu-query-replace-regexp) ; C-M-%
@@ -206,7 +207,7 @@
 
 (use-package dmacro
   :ensure t
-  :delight
+  :blackout
   :custom
   (dmacro-key (kbd "<f9>"))
   :config
@@ -324,7 +325,7 @@
 
 (use-package auto-save-buffers-enhanced
   :ensure t
-  :delight
+  :blackout
   :config
   (setq auto-save-buffers-enhanced-interval 180.0)
   (auto-save-buffers-enhanced t))
@@ -347,7 +348,7 @@
 
 (use-package undo-tree
   :ensure t
-  :delight
+  :blackout
   :bind
   ("C-M-/" . undo-tree-redo)
   :custom
@@ -388,7 +389,7 @@
 (use-package generic-x)
 
 (use-package whitespace
-  :delight global-whitespace-mode
+  :blackout global-whitespace-mode
   :custom
   (whitespace-style
    '(face tabs trailing space-before-tab space-after-tab tab-mark))
@@ -433,7 +434,7 @@
 
 (use-package rainbow-mode
   :ensure t
-  :delight
+  :blackout
   :hook
   (prog-mode . rainbow-turn-on))
 
@@ -468,7 +469,7 @@
 
 (use-package highlight-indent-guides
   :ensure t
-  :delight
+  :blackout
   :custom
   (highlight-indent-guides-auto-enabled t)
   (highlight-indent-guides-responsive t)
@@ -1163,7 +1164,7 @@ is only valid in `dired-mode'."
 
 (use-package which-key
   :ensure t
-  :delight
+  :blackout
   :custom
   (which-key-side-window-max-height 0.6)
   (which-key-idle-delay 0.6)
@@ -1171,8 +1172,11 @@ is only valid in `dired-mode'."
   (which-key-setup-side-window-bottom)
   (which-key-mode 1))
 
+(use-package mwim
+  :vc
+  (:fetcher "https://github.com/alezost/mwim.el"))
+
 (use-package yawc-mode
-  :ensure t
   :vc
   (:fetcher github :repo fenril058/yawc-mode)
   :custom
